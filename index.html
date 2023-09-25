@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Bir yazılım geliştirici olarak, esnek ve düzenli bir şekilde çalışarak SOLID prensiplerine uygunluk sağlamayı amaçlarım. Yazılım teknolojileri alanında her zaman en son gelişmeleri takip etmek suretiyle becerilerimi geliştirmeye gayret ederim. Ayrıca, beni destekleyen tüm bireylere rehberlik etmeyi ve yardımcı olmayı hedefleyerek yazılım endüstrisinde bir lider olma amacı güderim.">
+    <meta name="keywords" content="Nazlı Anapa, 23 yaşında, 42 Kocaeli Yazılım Okulu, Genç Geliştirici, yazılım eğitimi, staj deneyimi, C, C#, HTML, CSS, JavaScript, Proje Yönetimi, yenilikçi yazılım çözümleri">
+    <meta name="author" content="Nazlı Anapa">
+    <meta property="og:title" content="Nazlı Anapa | 42 Kocaeli Yazılım Okulu ve Oyun Geliştirici">
+    <meta property="og:description" content="Nazlı Anapa, 23 yaşında olan bir öğrenciyim. 42 Kocaeli Yazılım Okulu'nda öğrenim görüyorum.Yazılım bilgi ve becerilerimi geliştirmek için 42 Kocaeli'nin nitelikli eğitim kadrosu ve güncel müfredatı benim için ideal bir ortam sağlıyor.">
+    <meta property="og:image" content="https://nazlianapa.com.tr/src/jpg/naanapa.jpg">
+    <meta property="og:url" content="https://nazlianapa.com.tr/">
+    <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Nazlı Anapa | junior Game Developer</title>
+
+    <link rel="shortcut icon" href="./src/ico/x.png" type="image/x-icon">
+    <link rel="icon" href="./src/ico/favicon-16x16.png" type="image/x-icon">
+    <!-- aos cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps">
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  
+  </head>
+<body class="body">
+    <audio loop="" id="audioPlayer" autoplay="" style="display:none"><source src="src/mp3/preloader.mp3" type="audio/mp3"></audio>
+    <div id="preloader"></div>
+    <noscript>Allow Javascript</noscript>
+     
+    <header> 
+        
+         
+        <div class="navbar" id="navbar">
+            <div class="hey">Hello , I am NAZLI</div>
+            <div class="logo" tabindex="0" aria-label="Nazlı Anapa logo">
+
+                <br>
+                
+                
+                <div class="logo-bottom">
+                    <div class="face">
+                    </div><img src="src/ico/x.png" alt=""></div> <!--Body fotoğrafı eklenecek bul-->
+                
+            </div>
+            <div class="navbar-tabs" id="navbar-tabs">
+                <ul class="navbar-tabs-ul"  >
+                    <a href="#home" tabindex="0" aria-label="Home menu button">
+                        <li class="home activeThistab" class="navbar-tabs-li "data-aos="fade-down" data-aos-delay="100">&#60;/Home&#62;</li></a>
+                    <a href="#about"aria-label="about menu button">
+                    <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">&#60;/AboutMe&#62;</li></a>
+                    <a href="#skills"aria-label="skills menu button">
+                    <li class="skills" class="navbar-tabs-li"data-aos="fade-down" data-aos-delay="500">&#60;/Skills&#62;</li></a>
+                    <a href="#projects"aria-label="projects menu button">
+                    <li class="projects" class="navbar-tabs-li"data-aos="fade-down" data-aos-delay="700">&#60;/Projects&#62;</li></a>
+                    
+                </ul>
+
+               
+            </div><!-- navbar tabs ends -->
+        </div>
+    </header>
+    <!-- header ends here -->
+
+    <main>
+       
+        <!-- hamburger -->
+        <div class="hamburger" id="hamburger" data-aos="fade">
+            <div class="hamburgerbase">
+            <button id="hamburger-button" onclick="hamburgerMenu()"  tabindex="0" aria-label="Menu Button">
+                <span class="burger-bar" id="burger-bar1"></span>
+                <span class="burger-bar" id="burger-bar2"></span>
+                <span class="burger-bar" id="burger-bar3"></span></button>
+            </div>
+        </div>
+        <!-- hamburger -->
+        <div class="mobiletogglemenu" id="mobiletogglemenu">
+            <div class="emptyarea" id="emptyarea"></div>
+            <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+                <a href="#home" tabindex="0" aria-label="Home menu button">
+                    <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">&#60;/Home&#62;</li></a>
+                <a href="#about" tabindex="0" aria-label="about menu button">
+                <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about"onclick="hidemenubyli()">&#60;/AboutMe&#62;</li></a>
+                <a href="#skills" tabindex="0" aria-label="skills menu button">
+                <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills"onclick="hidemenubyli()">&#60;/Skills&#62;</li></a>
+                <a href="#projects" tabindex="0" aria-label="projects menu button">
+                <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">&#60;/Projects&#62;</li></a>
+                
+            </ul>
+        </div>
+        <!-- mobile toggle menu ends -->
+        <div class="fakenavbar"></div>
+        <section class="landing-page-container" id="home">
+           
+              
+              
+            
+            <div class="text-content">
+                <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
+                    
+                    <p class="jello">H</p>
+                    <p class="jello">e</p>
+                    <p class="jello">l</p>
+                    <p class="jello">l</p>
+                    <p class="jello">o</p>
+                    <p class="jello">(</p>
+                    <div class="eye"><div class="pupil"></div></div>
+                        <div class="eye"><div class="pupil"></div></div>
+                    <p class="jello">)</p>
+                    <p class="jello">;</p>
+                    <p class="jello">&nbsp;</p>
+                    <p class="jello">I</p>
+                    <p class="jello">'</p>
+                    <p class="jello">m</p>
+                  </article>
+
+                  
+                  
+                  <article id="name" data-aos="fade-up" data-aos-delay="200">
+                    <p class="jello">N</p>
+                    <p class="jello">a</p>
+                    <p class="jello">z</p>
+                    <p class="jello">l</p>
+                    <p class="jello">ı</p>
+                    <p class="jello">&nbsp;</p>
+                    <p class="jello">A</p>
+                    <p class="jello">n</p>
+                    <p class="jello">a</p>
+                    <p class="jello">p</p>
+                    <p class="jello">a</p>
+                    <p class="jello">.</p>
+                  </article>
+                  
+
+
+                <article id="work" data-aos="fade-up" data-aos-delay="400">
+                    <div>
+                      <p class="jello">J</p>
+                      <p class="jello">u</p>
+                      <p class="jello">n</p>
+                      <p class="jello">i</p>
+                      <p class="jello">o</p>
+                      <p class="jello">r</p>
+                    </div>
+                    <div>
+
+                    </div>
+
+                    <div> 
+                      <p class="jello">G</p>
+                      <p class="jello">a</p>
+                      <p class="jello">m</p>
+                      <p class="jello">e</p>
+                    </div>
+                    <div>
+
+                    </div>
+                    <div>
+                        <p class="jello">D</p>
+                      <p class="jello">e</p>
+                      <p class="jello">v</p>
+                      <p class="jello">e</p>
+                      <p class="jello">l</p>
+                      <p class="jello">o</p>
+                      <p class="jello">p</p>
+                      <p class="jello">e</p>
+                      <p class="jello">r</p>
+                      <p class="jello">.</p>
+                    </div>
+                  </article>
+                  
+                  <p id="info-para" data-aos="fade-up" data-aos-delay="600">
+                    <br>
+                    Nazlı Anapa, born on September 28, 2000, in Giresun,  and graduated from Giresun University with a degree in Optometry. Transitioning to a career in software development, currently studying at Ecole42, with a strong passion for lifelong learning and adapting to the evolving world of technology. 
+                  </p>
+                  
+                <div class="contact-btn-div"data-aos="fade-up"
+                data-aos-delay="800">
+                
+                    <a href="mailto:nazlianapa@hotmail.com" tabindex="-1">
+                        <button class="letsTalkBtn">
+                            <p class="letsTalkBtn-text">Contact Me</p>
+                            <span class="letsTalkBtn-BG"></span>
+                          </button></a>
+                    <div class="setting-container" id="setting-container">
+                        <input type="checkbox" id="switchforsetting" onclick="settingtoggle()">
+
+                        <label for="switchforsetting" id="labelforsetting"tabindex="0" aria-label="settings for sound and appearance"></label>
+
+                      <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+                        <input type="checkbox" id="switchforvisualmode"
+                        onclick="visualmode()">
+                        <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0" aria-label="switch appearance"></label>
+                      </div>
+
+                    <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
+                        <input type="checkbox" id="switchforsound" onclick="playpause()">
+                        <label for="switchforsound" id="labelforsound"tabindex="0" aria-label="switch sound"></label>
+                      </div> 
+                      </div><!-- setting div ends -->
+                   </div><!-- contact-btn-div -->
+                   
+            </div>
+            <!-- Resume button -->
+      <button class="resume-btn" id="resume-btn">
+  
+        <div class="sign"><i class="fa-solid fa-cloud-arrow-down fa-bounce fa-xl" style="color: #ffffff;"></i></div>
+        
+        <div class="text">CV</div>
+      </button>
+        </section>
+        <!-- landing page ends here -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section class="about-section-container" id="about" data-aos="fade-up">
+            <div class="about-section">
+                <div class="about-heading"><article class="about-heading-article" tabindex="0"aria-label="About me heading">&#60;/AboutMe&#62;</article><p class="aboutHeadingP"></p></div>
+                
+                <div class="info-dp-section">
+                    <div class="about-info">
+                        <p tabindex="0">Hello, I'm Nazlı ANAPA. I was born on September 28, 2000, in Giresun, and I completed my primary education at Mehmet Akif Ersoy Middle School. Afterward, I attended Bahçelievler Anatolian High School, and I graduated from Giresun University with a degree in Optometry. Following my graduation from this program, I decided to pursue a career in software development, and I am currently continuing my education in this field at Ecole42 schools. </p> <br>
+                        <p tabindex="0">I believe in adopting a software-centric lifestyle, and I take great pleasure in constantly learning new things, driven by the excitement of being open to new knowledge. </p> <br>
+                           <p tabindex="0"> By striving to stay open to information, I hope I have demonstrated my readiness to adapt to valuable changes in the ever-evolving world of technology.</p>
+
+                    </div>
+                    <div class="dp" data-aos="fade-up"><img src="./src/jpg/naanapa.jpg" alt=""tabindex="0" aria-label="image of nazlı"></div>  <!-- Resim yerleştirilcek BUL  -->
+                </div>
+            </div>
+        </section>
+        <!-- about section ends  -->
+        
+        <section class="skills-section-container" id="skills">
+            <div class="skills-section">
+                <div class="skills-heading" data-aos="fade-up"><article class="skills-heading-article"tabindex="0"aria-label="skills heading">&#60;/Skills&#62;</article><p class="skillsHeadingP"></p></div>
+                
+                <div class="frontend-dev-section">
+
+                    <div class="frontend-dev-heading" data-aos="fade-up"tabindex="0"aria-label="As a game developer these are the skills i have">Programming Languages</div>
+                    <div class="language-speak"><article tabindex="0"aria-label="languages i speak below">>_ My Skills:</article></div>
+                    <div class="languages-section">
+
+                        <div class="language-name"data-aos="fade-up" id="html"><article tabindex="0"aria-label="C#">C#</article>
+                        <p>INTERMEDIATE!</p></div>
+                        
+                        <div class="language-name"data-aos="fade-up" id="css"><article tabindex="0"aria-label="C">C</article>
+                            <p>ADVANCED!</p></div>
+
+                            <div class="language-name"data-aos="fade-up"id="bootstrap"><article tabindex="0"aria-label="UNİTY">UNİTY</article>
+                                <p>INTERMEDIATE!</p></div>
+                                <div class="language-name"data-aos="fade-up"id="react"><article tabindex="0"aria-label="CSS">CSS</article>
+                                    <p>BEGINNER!</p></div>
+                                <div class="language-name"data-aos="fade-up"id="js"><article tabindex="0"aria-label="HTML">HTML</article>
+                                    <p>INTERMEDIATE!</p></div>
+                                    
+
+                    </div>
+
+                </div>
+                <div class="designing-section frontend-dev-section">
+
+                    <div class="designing-heading frontend-dev-heading" data-aos="fade-up"tabindex="0"aria-label="Schools">Schools</div>
+                    <div class="enjoy-designing language-speak" data-aos="fade-up"><article>>_ My Schools:</article></div>
+                    <div class="tool-section languages-section">
+
+                        <div class="tool-name language-name" data-aos="fade-up"id="ap"><article tabindex="0"aria-label="42 Kocaeli">42 Kocaeli</article>
+                        <p>2022 - CONTİNUES</p></div>             
+
+                    </div>
+
+                </div>
+                <div class="other-languages frontend-dev-section">
+
+                    <div class="languages-heading frontend-dev-heading" data-aos="fade-up"tabindex="0"aria-label="Learning Phase">Learning Phase</div>
+                    <div class="languages-i-know language-speak" data-aos="fade-up"><article>>_ Learning:</article></div>
+                    <div class="programming-section languages-section">
+
+                        <div class="language-name language-name" data-aos="fade-up" id="c"><article tabindex="0"aria-label="BLENDER a programming language">BLENDER</article>
+                        <p>INTERMEDIATE!</p></div>
+                        <div class="language-name language-name" data-aos="fade-up"id="cpp"><article tabindex="0"aria-label="JAVASCRIPT a programming language">JAVASCRIPT</article>
+                            <p>BEGINNER!</p></div>  
+                        <div class="language-name language-name" data-aos="fade-up" id="c"><article tabindex="0"aria-label="FLUTTER a programming language">FLUTTER</article>
+                             <p>BEGINNER!</p></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- skills section ends -->
+        <section class="projects-section-container" id="projects">
+            <div class="projects-section-div">
+                <div class="projects-heading"><article class="projects-heading-article" tabindex="0"aria-label="My projects starts from here">&#60;/Projects&#62;</article><p class="projectsHeadingP"></p></div>
+                <div class="project-boxes-div">
+
+                    <a href="https://github.com/ichbinazli/Product-Management" target="_blank"><div class="project-box project-box1" id="project-box1">
+                    <div class="info-div">
+                        <!-- <img src="src/webp/axocean-favicon.webp" alt="" class="faviconforProject"> -->
+                        <article class="ProjectHeading">PRODUCT MANAGEMENT</article>
+                        <p class="ProjectDescription">A product management system created using the C# programming language. This system adheres to standards such as adding, updating, deleting, and viewing products as its fundamental functionalities.</p>
+                        <button class="cta">
+                            <span>Projects Page</span>
+                            <svg viewBox="0 0 13 10" height="10px" width="15px">
+                              <path d="M1,5 L11,5"></path>
+                              <polyline points="8 1 12 5 8 9"></polyline>
+                            </svg>
+                          </button>
+                    </div>
+                    <div class="image-div"><img src="./src/jpg/Product.jpeg" alt=""></div>
+                </div></a>
+<!-- ---------------------- -->
+
+        </section>
+        
+    </main>
+    <!-- main ends here -->
+
+    <footer>
+        
+        <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()"><article aria-label="Back to top">&#8592;BACK TO TOP</article></button>
+        <div class="footercontainer">
+            <div class="two-words"><article tabindex="0"aria-label="Learning, Living, and Leveling Up, my quote">"Learning, Living, and Leveling Up."</article></div>
+            <div class="social-media-container">
+                <div class="getintouch-heading"><article>GetinTouch();</article></div>
+                <div class="logos">
+            <a href="https://instagram.com/nazlianapa" target="_blank"tabindex="0"aria-label="My instagram"><i class="fa-brands fa-instagram fa-bounce fa-2xl" style="color: #ffffff;"></i></a>
+
+
+            <a href="https://www.linkedin.com/in/nazl%C4%B1-anapa-650238273/"target="_blank"aria-label="My Linkdin"><i class="fa-brands fa-linkedin-in fa-bounce fa-2xl" style="color: #ffffff;"></i></a>
+
+
+            <a href="https://github.com/ichbinazli"target="_blank" aria-label="My github"><i class="fa-brands fa-github fa-bounce fa-2xl" style="color: #ffffff;"></i></a>
+
+
+            <a href="mailto:nazlianapa@hotmail.com" target="_blank"aria-label="My Mail"><i class="fa-regular fa-envelope fa-bounce fa-2xl" style="color: #ffffff;"></i></a>
+        </div>
+            </div>
+            <div class="footer-bottom">
+                <article>Design & Build by <a href="https://ogubenn.com.tr/" target="_blank">  Oğulcan Durkan </a>& <a href="#"> Nazlı Anapa</a> <i class="far fa-copyright"></i></article>
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer ends here -->
+    
+</body>
+
+<script src="main.js"></script> 
+<!-- for aos animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script>
+
+  document.getElementById("resume-btn").addEventListener("click", function () {
+    var fileUrl = "./src/pdf/"; //buraya pdf dosyası yerleştirilcek. bul
+    window.open(fileUrl, '_blank');
+    //saveAs(fileUrl, "Nazlı_Anapa_CV"); //buraya pdf dosyası yerleştirilcek. bul
+  });
+</script>
+
+</html>
